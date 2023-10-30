@@ -6,7 +6,6 @@ hidl_interface {
     system_ext_specific: true,
     srcs: [
         "ITouchFeature.hal",
-        "types.hal",
     ],
     interfaces: [
         "android.hidl.base@1.0",
