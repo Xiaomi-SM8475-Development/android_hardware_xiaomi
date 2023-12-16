@@ -1,7 +1,7 @@
 package vendor.xiaomi.hw.touchfeature@1.0;
 
 interface ITouchFeature {
-     // Return value int32_t val < 0 means error
+    // Return value int32_t val < 0 means error
     setTouchMode(uint32_t touchId, uint32_t mode, uint32_t value) generates (int32_t val);
     getTouchModeCurValue(uint32_t touchId, uint32_t mode) generates (int32_t val);
     getTouchModeMaxValue(uint32_t touchId, uint32_t mode) generates (int32_t val);
