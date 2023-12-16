@@ -22,9 +22,9 @@ xiaomi_touch_hal_cc_defaults {
 }
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.xiaomi",
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.xiaomi.xml"],
-    init_rc: ["vendor.lineage.touch@1.0-service.xiaomi.rc"],
+    name: "vendor.xperience.touch@1.0-service.xiaomi",
+    vintf_fragments: ["vendor.xperience.touch@1.0-service.xiaomi.xml"],
+    init_rc: ["vendor.xperience.touch@1.0-service.xiaomi.rc"],
     defaults: [
         "hidl_defaults",
         "xiaomi_touch_hal_defaults",
@@ -40,6 +40,6 @@ cc_binary {
         "libbinder",
         "libhidlbase",
         "libutils",
-        "vendor.lineage.touch@1.0",
+        "vendor.xperience.touch@1.0",
     ],
 }

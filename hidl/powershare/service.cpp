@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.powershare@1.0-service.xiaomi"
+#define LOG_TAG "vendor.xperience.powershare@1.0-service.xiaomi"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
@@ -14,8 +14,8 @@
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using vendor::lineage::powershare::V1_0::IPowerShare;
-using vendor::lineage::powershare::V1_0::implementation::PowerShare;
+using vendor::xperience::powershare::V1_0::IPowerShare;
+using vendor::xperience::powershare::V1_0::implementation::PowerShare;
 
 using android::OK;
 using android::status_t;
