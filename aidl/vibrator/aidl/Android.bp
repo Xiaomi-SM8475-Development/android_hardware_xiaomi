@@ -42,6 +42,27 @@ cc_library_shared {
     export_include_dirs: ["include"]
 }
 
+cc_library_shared {
+    name: "vendor.qti.hardware.vibrator.impl.xiaomi_taro",
+    defaults: [
+        "xiaomi_vibrator_hal_defaults",
+    ],
+    vendor: true,
+    srcs: [
+        "Vibrator.cpp",
+        "VibratorOffload.cpp",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libqtivibratoreffect.xiaomi_taro",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk",
+    ],
+    export_include_dirs: ["include"]
+}
+
 cc_binary {
     name: "vendor.qti.hardware.vibrator.service.xiaomi",
     vendor: true,
