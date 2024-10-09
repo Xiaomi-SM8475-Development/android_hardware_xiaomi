@@ -12,7 +12,11 @@
 
 using ::aidl::android::hardware::biometrics::common::BnCancellationSignal;
 
-namespace aidl::android::hardware::biometrics::fingerprint {
+namespace aidl {
+namespace android {
+namespace hardware {
+namespace biometrics {
+namespace fingerprint {
 
 class CancellationSignal : public BnCancellationSignal {
 public:
@@ -23,4 +27,8 @@ private:
     Session* mSession;
 };
 
-}  // namespace aidl::android::hardware::biometrics::fingerprint
+} // namespace fingerprint
+} // namespace biometrics
+} // namespace hardware
+} // namespace android
+} // namespace aidl

@@ -22,7 +22,11 @@ using ::aidl::android::hardware::biometrics::common::OperationContext;
 using ::aidl::android::hardware::biometrics::fingerprint::PointerContext;
 using ::aidl::android::hardware::keymaster::HardwareAuthToken;
 
-namespace aidl::android::hardware::biometrics::fingerprint {
+namespace aidl {
+namespace android {
+namespace hardware {
+namespace biometrics {
+namespace fingerprint {
 
 void onClientDeath(void* cookie);
 
@@ -100,4 +104,8 @@ private:
     UdfpsHandler* mUdfpsHandler;
 };
 
-}  // namespace aidl::android::hardware::biometrics::fingerprint
+} // namespace fingerprint
+} // namespace biometrics
+} // namespace hardware
+} // namespace android
+} // namespace aidl
