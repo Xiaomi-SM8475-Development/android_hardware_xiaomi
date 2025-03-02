@@ -122,6 +122,9 @@ class SysfsPollingOneShotSensor : public OneShotSensor {
 #ifdef USES_UDFPS_SENSOR
 static const char* udfpsStatePaths[] = {
   "/sys/devices/virtual/touch/touch_dev/fod_press_status",
+  "/sys/devices/platform/goodix_ts.0/gesture/fod_en"
+  "/sys/devices/platform/goodix_ts.0/udfps_enabled",
+  "/sys/devices/platform/goodix_ts.0/udfps_pressed",
   "/sys/touchpanel/fp_state",
   NULL
 };
