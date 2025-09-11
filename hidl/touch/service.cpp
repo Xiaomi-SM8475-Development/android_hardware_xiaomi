@@ -4,15 +4,15 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "lineage.touch@1.0-service.xiaomi"
+#define LOG_TAG "xperience.touch@1.0-service.xiaomi"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
 
 #include "HighTouchPollingRate.h"
 
-using ::vendor::lineage::touch::V1_0::IHighTouchPollingRate;
-using ::vendor::lineage::touch::V1_0::implementation::HighTouchPollingRate;
+using ::vendor::xperience::touch::V1_0::IHighTouchPollingRate;
+using ::vendor::xperience::touch::V1_0::implementation::HighTouchPollingRate;
 
 int main() {
     android::sp<IHighTouchPollingRate> highTouchPollingRate = new HighTouchPollingRate();
